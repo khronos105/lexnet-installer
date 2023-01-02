@@ -7,6 +7,7 @@ This script is used to install all Lexnet certificates from the official [websit
 To download the zip with all certificates I used python with selenium(tried to download with curl and wget and doesn't work). You must have install python3 and pip3.
 
 ```bash
+mkdir -p /Users/$USER/_/lexnet_certs_installer
 python3 -m venv venv
 source venv/bin/activate
 pip3 install selenium

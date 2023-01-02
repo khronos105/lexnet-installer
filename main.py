@@ -8,7 +8,10 @@ options = Options()
 
 options.headless = True
 
-p = {"download.default_directory": "/Users/khronos/_/lexnet_certs_installer/downloads"}
+# "/Users/khronos/_/lexnet_certs_installer/downloads"
+download_path = input(
+    "Enter your value: /Users/USER/_/lexnet_certs_installer/downloads")
+p = {"download.default_directory": download_path}
 options.add_experimental_option("prefs", p)
 
 driver = webdriver.Chrome(service=Service(
